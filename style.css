@@ -1,0 +1,380 @@
+/* ------------
+
+Mobile First 
+
+----------------
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+   
+    
+}
+
+
+
+
+/*----------
+Navigation Bar Styling 
+---------*/
+
+header {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-con {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    background-color:white;
+    width: 100vw;
+    justify-content: space-between;
+
+}
+
+.navbar-left {
+    margin: 0;
+    justify-content: flex-end;
+    
+
+}
+
+.navbar-img {
+    width: 10em;
+    margin-top: 1em;
+    
+}
+
+.navbar-right {
+   
+    
+}
+
+.navbar-right ul {
+    display: flex;
+    
+}
+
+.navbar-right li {
+    list-style: none;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    
+    
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: black;
+    
+    font-size: 1.3em;
+    
+}
+
+.fa-bars { 
+    display: none;
+}
+
+/* ------------
+
+Mobile First 
+
+Navigation  Bar Mobile Styling
+
+----------------
+*/
+
+@media (max-width: 991px) {
+
+    .navbar-con{
+        
+    }
+    .navbar-right ul {
+        padding-left: 2em;
+        flex-direction: column;
+        
+       
+        
+    }
+
+    .fa-bars {
+        display: flex;
+        color: black;
+        border: none;
+        margin: 0.2em 1.3em 0.3em 0;
+        
+        height: 1.5em;
+        cursor: pointer;
+    }
+
+    .navbar-right li {
+        display: none;
+
+       
+    }
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+}
+
+/* 
+------------
+Landing Page Styling 
+---------------
+*/
+
+.landing-page-container {
+    margin-top: 4em;
+    background-image: url(assest/img/eden-school-background-img-3.jpg);
+    height: 40em;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    margin-bottom: 0;
+    box-shadow: 12px 29px 81px 3px rgba(0,0,0,0.2);
+    
+}
+
+.landing-page-details {
+    padding: 8em 0 0 4em;
+    
+    
+    
+}
+
+.landing-page-header {
+    font-size: 4rem;
+}
+
+.landing-page-info {
+    font-size: 1.3rem;
+    font-weight: 400;
+  
+}
+
+/* ------------
+
+Mobile First 
+
+Landing Page Mobile Styling
+
+----------------
+*/
+
+@media(max-width: 991px) {
+    .landing-page-container {
+        height: 25em;
+    }
+
+.landing-page-details {
+    padding: 6em 0 0 1em;
+}
+
+    .landing-page-header {
+        font-size: 1.5em;
+    }
+
+    .landing-page-info{
+        font-size: 0.8em;
+    }
+}
+
+/* 
+------------
+About Page Styling 
+---------------
+*/
+.about-container {
+   
+    padding-bottom: 4em;
+    margin-top: 4em;
+    border: 0;
+}
+
+.about-page-info {
+    text-align: center;
+    margin: 0;
+    
+    
+}
+
+
+.about-page-col-con {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+}
+    
+
+.about-page-col {
+    width: 25%;
+    background-color: white;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-col-link {
+    text-decoration: none;
+    color: rgb(172, 46, 46);
+    font-weight: bold;
+}
+
+.about-page-col h3 {
+    text-align: center;
+}
+
+.about-page-col p {
+    text-align: center;
+}
+
+
+
+/* ------------
+
+Mobile First 
+
+About Page Mobile Styling
+
+----------------
+*/
+
+@media (max-width: 991px) {
+    
+    .about-page-col-con {
+        flex-direction: column;;
+    }
+
+    .about-page-col {
+        width: 100%;
+    }
+}
+
+/* 
+------------
+Detailed About Page Styling 
+---------------
+*/
+
+.detailed-about-con {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.detailed-about-col {
+
+}
+
+.detailed-about-col h1 {
+    font-weight: bold;
+    
+
+}
+
+.detailed-about-col ul {
+
+}
+
+.detailed-about-col li {
+    list-style: square;
+    line-height: 2em;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.detailed-about-img {
+    width: 100%;
+    
+}
+
+.detailed-about-link {
+    text-decoration: none;
+    color: rgb(172, 46, 46);
+    font-weight: bold;
+    font-size: 1.2rem;
+ 
+}
+
+/* ------------
+
+Mobile First 
+
+Detailed About Page Mobile Styling
+
+----------------
+*/
+
+@media (max-width: 991px) {
+
+    .detailed-about-con{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .detailed-about-col h1 {
+        text-align: center;
+        font-size: 1.8rem;
+    
+    }
+
+    .detailed-about-col ul {
+        text-align: center;
+    }
+
+    .detailed-about-col li {
+        font-size: 1rem;
+        margin: 0;
+        text-align: center;
+        
+    }
+    
+    .detailed-about-link {
+        text-align: center;
+    }
+}
+
+    /* 
+------------
+Footer Page Styling 
+---------------
+*/
+
+footer {
+    display: flex;
+    padding: 2em;
+    justify-content: space-evenly;
+    color:grey;
+    margin: 5em 0 2em 0;
+    font-family: 'Reem Kufi';
+}
+
+footer p {
+    line-height: 2em;
+}
+
+footer h3 {
+    color: rgb(172, 46, 46);
+}
+
+/* ------------
+
+Mobile First 
+
+Footer Page Mobile Styling
+
+----------------
+*/
+
+@media (max-width: 991px) {
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
